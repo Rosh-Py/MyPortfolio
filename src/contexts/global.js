@@ -6,6 +6,7 @@ const GlobalContext = React.createContext();
 const initialState = {
   isSidebarOpen: false,
   isNavbarFixed: false,
+  isThemeChanged: false,
 };
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -16,9 +17,13 @@ export const GlobalProvider = ({ children }) => {
   const openSidebar = () => {
     dispatch({ type: "OPEN_SIDEBAR" });
   };
-
+  const changeTheme = () => {
+    dispatch({ type: "CHANGE_THEME" });
+  };
   return (
-    <GlobalContext.Provider value={{ ...state, closeSidebar, openSidebar }}>
+    <GlobalContext.Provider
+      value={{ ...state, closeSidebar, openSidebar, changeTheme }}
+    >
       {children}
     </GlobalContext.Provider>
   );

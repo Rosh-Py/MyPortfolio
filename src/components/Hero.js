@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-const name = "Roshan Jha";
-const profession = "Full Stack Web Developer";
-const heroImg =
-  "https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+import { name, profession, heroImg } from "../data";
 
 function Hero() {
   return (

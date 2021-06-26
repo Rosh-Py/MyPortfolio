@@ -1,13 +1,13 @@
 import React from "react";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaToggleOff, FaToggleOn } from "react-icons/fa";
 import styled from "styled-components";
 import { useGlobalContext } from "../contexts";
 import { v4 as uuidv4 } from "uuid";
-
-const navLinks = ["About", "Skills", "Projects", "Contact"];
+import { navLinks } from "../data";
 
 const Sidebar = () => {
-  const { isSidebarOpen, closeSidebar } = useGlobalContext();
+  const { isSidebarOpen, closeSidebar, isThemeChanged, changeTheme } =
+    useGlobalContext();
   return (
     <Wrapper>
       <div className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}>
@@ -27,6 +27,15 @@ const Sidebar = () => {
               </li>
             );
           })}
+          {isThemeChanged ? (
+            <li>
+              <FaToggleOn onClick={changeTheme} className="toggle-switch" />
+            </li>
+          ) : (
+            <li>
+              <FaToggleOff onClick={changeTheme} className="toggle-switch" />
+            </li>
+          )}
         </ul>
       </div>
     </Wrapper>
@@ -80,6 +89,11 @@ const Wrapper = styled.div`
   }
   .nav-link:hover {
     color: var(--clr-primary-3);
+  }
+  .toggle-switch {
+    color: #00b4d8;
+    font-size: 2rem;
+    cursor: pointer;
   }
 `;
 

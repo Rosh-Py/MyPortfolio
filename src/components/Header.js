@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaToggleOff, FaToggleOn } from "react-icons/fa";
 import { useGlobalContext } from "../contexts";
 import { v4 as uuidv4 } from "uuid";
-const navLinks = ["About", "Skills", "Projects", "Contact"];
-
-const pageTitle = "</Roshan>";
-const typeSpeed = 100; //in ms
+import { navLinks, pageTitle, typeSpeed } from "../data";
 
 const Header = () => {
-  const { openSidebar } = useGlobalContext();
+  const { openSidebar, changeTheme, isThemeChanged } = useGlobalContext();
   const [title, setTitle] = useState("");
-
+  window.scrollTo(0, 0);
   //typewriter effect starts
   let i = 0;
   const typeWriter = () => {
@@ -27,6 +24,10 @@ const Header = () => {
 
   useEffect(typeWriter, []);
   //typeWriter effect ends
+
+  // Change theme starts
+
+  // Change theme ends
 
   //Navbar fix logic starts
   useEffect(() => {
@@ -51,7 +52,7 @@ const Header = () => {
   }, []);
   //Navbar fix logic ends
   return (
-    <Wrapper>
+    <Wrapper linkNum={navLinks.length}>
       <div id="navbar-container" className="nav-container">
         <nav className="section-center navbar">
           <div className="typewriter">
@@ -73,6 +74,15 @@ const Header = () => {
                 </li>
               );
             })}
+            {isThemeChanged ? (
+              <li>
+                <FaToggleOn onClick={changeTheme} className="toggle-switch" />
+              </li>
+            ) : (
+              <li>
+                <FaToggleOff onClick={changeTheme} className="toggle-switch" />
+              </li>
+            )}
           </ul>
           <FaBars className="nav-icon" onClick={openSidebar} />
         </nav>
@@ -112,7 +122,11 @@ const Wrapper = styled.header`
     z-index: 2;
     box-shadow: var(--light-shadow);
   }
-
+  .toggle-switch {
+    color: #00b4d8;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
   //Typewriter effect css starts
   .typewriter .page-title {
     animation: blink-caret 0.75s infinite;
@@ -133,7 +147,7 @@ const Wrapper = styled.header`
   @media screen and (min-width: 768px) {
     .nav-links {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(${(props) => props.linkNum + 2}, 1fr);
       justify-items: center;
       column-gap: 2rem;
     }

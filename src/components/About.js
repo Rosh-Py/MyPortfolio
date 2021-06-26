@@ -1,14 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { v4 as uuidv4 } from "uuid";
-const aboutText = `
-Hey There! Glad you are here.
-I am Roshan, a full stack web developer from India.
-I've worked on technologies like PL/SQL (Yep! No secrets.😊), Oracle SQL and here comes my favorites😍 HTML5, CSS3, Javascript, React.js, Node.js, MongoDB with Mongoose and a little bit of Python too.
-That's all my Lord!
-`;
-const aboutImg =
-  "https://images.pexels.com/photos/2764678/pexels-photo-2764678.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+import { aboutText, aboutImg } from "../data";
+
 function About() {
   return (
     <Wrapper id="about" className="section section-center">

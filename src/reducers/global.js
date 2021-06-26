@@ -6,6 +6,14 @@ const global_reducer = (state, action) => {
     case "OPEN_SIDEBAR":
       return { ...state, isSidebarOpen: true };
 
+    case "CHANGE_THEME":
+      if (!state.isThemeChanged) {
+        document.documentElement.className = "blue-theme";
+      } else {
+        document.documentElement.className = "orange-theme";
+      }
+      return { ...state, isThemeChanged: !state.isThemeChanged };
+
     default:
       throw new Error(`${action.type} action not found in global reducer`);
   }

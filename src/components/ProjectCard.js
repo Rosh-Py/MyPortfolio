@@ -43,7 +43,8 @@ const Wrapper = styled.article`
   grid-template-rows: auto 1fr auto;
   border-radius: 3%;
   overflow: hidden;
-  background: var(--clr-primary-9);
+  /* background: var(--clr-primary-9); */
+  background: var(--clr-white);
   
   .skills{
     display:flex;
@@ -72,6 +73,11 @@ const Wrapper = styled.article`
   .icon {
     font-size: 1.5rem;
     color: var(--clr-primary-5);
+    transition: var(--transition);
+  }
+  .icon:hover{
+    /* transform: scale(1.2); */
+    color: var(--clr-primary-3);
   }
 `;
 
