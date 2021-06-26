@@ -77,7 +77,7 @@ const projects = [
     title: "BackRoads",
     description:
       "A Static tour explore website made using HTML and CSS only without using third party libraries. It's using CSS flexbox for the layouts.",
-    skills: "HTML, CSS and Javascript",
+    skills: "HTML, CSS, Javascript",
     github: "https://github.com/Rosh-Py/Backroads-tour-company",
     live: "https://rosh-backroads-tour-company.netlify.app/",
   },
@@ -86,7 +86,7 @@ const projects = [
     title: "Tea-Station",
     description:
       "A Static website for Tea Station made using HTML and CSS only without using third party libraries. It's using CSS floats for the layouts.",
-    skills: "HTML, CSS and Javascript",
+    skills: "HTML, CSS, Javascript",
     github: "https://github.com/Rosh-Py/WebDev-TeaStation",
     live: "https://rosh-tea-station.netlify.app/",
   },
