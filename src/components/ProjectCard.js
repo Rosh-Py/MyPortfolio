@@ -10,6 +10,7 @@ function ProjectCard({ img, title, description, skills, github, live }) {
       <img src={img} alt={title} className="project-img" />
       <div className="project-detail">
         <h5>{title}</h5>
+        <div className="underline"></div>
         <p>{description}</p>
         <div className="skills">
           {skillsArr.map((skill) => {
@@ -45,7 +46,16 @@ const Wrapper = styled.article`
   overflow: hidden;
   /* background: var(--clr-primary-9); */
   background: var(--clr-white);
-  
+  transition: var(--transition);
+  .underline{
+    height:2px;
+    margin-left:0;
+    margin-bottom: 0.25rem;
+  }
+  :hover{
+    box-shadow: var(--dark-shadow);
+    transform: scale(1.03);
+  }
   .skills{
     display:flex;
     gap: 0.5rem;
@@ -59,9 +69,11 @@ const Wrapper = styled.article`
     margin: 0.5rem 1rem;
   }
   .project-img {
-    height: 13rem;
+    height: 10rem;
     object-fit: cover;
     margin-bottom: 0.5rem;
+    border-bottom:1px solid var(--clr-primary-5);
+    box-shadow:var(--light-shadow);
   }
   .live-icon{
     animation: spinner 10s linear infinite;

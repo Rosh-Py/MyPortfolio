@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTimes, FaToggleOff, FaToggleOn } from "react-icons/fa";
 import styled from "styled-components";
+import { Socials } from "./";
 import { useGlobalContext } from "../contexts";
 import { v4 as uuidv4 } from "uuid";
 import { navLinks } from "../data";
@@ -37,6 +38,7 @@ const Sidebar = () => {
             </li>
           )}
         </ul>
+        <Socials />
       </div>
     </Wrapper>
   );

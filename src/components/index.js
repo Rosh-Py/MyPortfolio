@@ -7,6 +7,7 @@ import Skills from "./Skills";
 import ProjectCard from "./ProjectCard";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import Socials from "./Socials";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   ProjectCard,
   Projects,
   Footer,
+  Socials,
 };

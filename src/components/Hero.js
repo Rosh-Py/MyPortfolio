@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { name, profession, heroImg } from "../data";
+import { name, profession, heroImg, userLinkedIn } from "../data";
+import { Socials } from "./";
 
 function Hero() {
   return (
@@ -10,7 +11,12 @@ function Hero() {
           <div className="underline"></div>
           <h1 className="heading">I'm {name}</h1>
           <h5 className="profession heading">{profession}</h5>
-          <button className="btn">Hire me</button>
+          <a href={userLinkedIn} className="btn">
+            Contact Me
+          </a>
+          <div className="socials">
+            <Socials />
+          </div>
         </div>
         <div className="hero-img-container">
           <img src={heroImg} alt="hero" className="hero-img" />
@@ -27,6 +33,9 @@ const Wrapper = styled.div`
   }
   .hero-img-container {
     display: none;
+  }
+  .socials {
+    margin-top: 0.75rem;
   }
   .hero-container {
     display: grid;
