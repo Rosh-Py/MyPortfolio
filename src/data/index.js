@@ -49,7 +49,7 @@ const projects = [
     img: "https://ik.imagekit.io/jwn9hql2way/Qkart_ny4W9yzpK.PNG",
     title: "QKart",
     description:
-      "Front to back, designed to demonstrate the basic e-commerce with register and login functionalities, secured by backend using authorization and route protection.",
+      "A Crio project! Front to back, designed to demonstrate the basic e-commerce with register and login functionalities, secured by backend using authorization and route protection.",
     skills: "Node.js,Express.js, MongoDB, Mongoose, React.js, Ant Design",
     github: "temp",
     live: "temp",
