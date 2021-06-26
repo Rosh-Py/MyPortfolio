@@ -6,17 +6,17 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: #03045E;
-  --clr-primary-2: #023E8A;
-  --clr-primary-3: #0077B6;
-  --clr-primary-4: #0096C7;
+  --clr-primary-1: #03045e;
+  --clr-primary-2: #023e8a;
+  --clr-primary-3: #0077b6;
+  --clr-primary-4: #0096c7;
   /* primary/main color */
-  --clr-primary-5: #00B4D8;
+  --clr-primary-5: #00b4d8;
   /* lighter shades of primary color */
-  --clr-primary-6: #48CAE4;
-  --clr-primary-7: #90E0EF;
-  --clr-primary-8: #ADE8F4;
-  --clr-primary-9: #CAF0F8;
+  --clr-primary-6: #48cae4;
+  --clr-primary-7: #90e0ef;
+  --clr-primary-8: #ade8f4;
+  --clr-primary-9: #caf0f8;
   /* darkest grey - used for headings */
   --clr-text-1: hsl(209, 61%, 16%);
   /* grey used for paragraphs */
@@ -30,8 +30,10 @@ Variables
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
   --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  /* --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); */
+  --light-shadow: 0 5px 15px rgba(0, 180, 232, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 180, 232, 0.8);
   --max-width: 1170px;
 }
 /*
@@ -48,8 +50,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -73,7 +75,11 @@ h5 {
   letter-spacing: var(--spacing);
   /* text-transform: capitalize; */
   line-height: 1.25;
-  /* margin-bottom: 0.75rem; */
+  margin-bottom: 0.75rem;
+}
+img {
+  display: block;
+  width: 100%;
 }
 h1 {
   font-size: 2.5rem;
@@ -127,7 +133,7 @@ Global classes
 ============
 */
 .section {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 .section-center {
   width: 90vw;
@@ -138,6 +144,9 @@ Global classes
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
+  }
+  .section {
+    padding: 4rem 0;
   }
 }
 .text-center {
@@ -179,4 +188,15 @@ Global classes
 .btn:hover {
   color: var(--clr-primary-3);
   background: var(--clr-primary-7);
+}
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading {
+  margin-bottom: 1rem;
 }
