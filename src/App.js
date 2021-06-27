@@ -4,6 +4,14 @@ import { HomePage } from "./pages";
 import "./index.css";
 
 function App() {
+  // Theme set starts
+  const currentTheme =
+    localStorage.getItem("ThemeChangedStatus") === "true" ? true : false;
+
+  document.documentElement.className = currentTheme
+    ? "orange-theme"
+    : "blue-theme";
+  // Theme set ends
   return (
     <div className="App">
       <Router>
