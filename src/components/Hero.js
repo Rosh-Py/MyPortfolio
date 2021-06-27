@@ -19,7 +19,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-img-container">
-          <img src={heroImg} alt="hero" className="hero-img" />
+          <img src={heroImg} alt="hero" className="hero-img" loading="lazy" />
         </div>
       </div>
     </Wrapper>

@@ -6,7 +6,8 @@ const GlobalContext = React.createContext();
 const initialState = {
   isSidebarOpen: false,
   isNavbarFixed: false,
-  isThemeChanged: false,
+  isThemeChanged:
+    localStorage.getItem("ThemeChangedStatus") === "true" ? true : false,
 };
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);

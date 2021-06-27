@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaBars, FaToggleOff, FaToggleOn } from "react-icons/fa";
 import { useGlobalContext } from "../contexts";
@@ -62,16 +63,16 @@ const Header = () => {
           </div>
           <ul className="nav-links">
             <li>
-              <a href="/" className="nav-link">
+              <Link to="/" className="nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             {navLinks.map((link, index) => {
               return (
                 <li key={uuidv4()}>
-                  <a href={`/${link.toLowerCase()}`} className="nav-link">
+                  <Link to={`/${link.toLowerCase()}`} className="nav-link">
                     {link}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
@@ -124,7 +125,7 @@ const Wrapper = styled.header`
     box-shadow: var(--light-shadow);
   }
   .toggle-switch {
-    color: #00b4d8;
+    color: hsl(42, 78%, 60%);
     font-size: 1.5rem;
     cursor: pointer;
   }

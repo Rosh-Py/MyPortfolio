@@ -7,7 +7,7 @@ function About() {
   return (
     <Wrapper id="about" className="section section-center">
       <div className="about-img-container">
-        <img src={aboutImg} className="about-img" alt="about" />
+        <img src={aboutImg} className="about-img" alt="about" loading="lazy" />
       </div>
       <div className="about-text-container">
         <h2>About</h2>

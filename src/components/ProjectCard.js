@@ -7,7 +7,7 @@ function ProjectCard({ img, title, description, skills, github, live }) {
   const skillsArr = skills.split(",");
   return (
     <Wrapper>
-      <img src={img} alt={title} className="project-img" />
+      <img src={img} alt={title} className="project-img" loading="lazy" />
       <div className="project-detail">
         <h5>{title}</h5>
         <div className="underline"></div>
@@ -58,11 +58,13 @@ const Wrapper = styled.article`
   }
   .skills{
     display:flex;
-    gap: 0.5rem;
+    /* gap: 0.5rem;  */ //Commented due to support issue
     flex-wrap:wrap;
   }
   .btn{
     font-size: 0.6rem;
+    margin-right:0.5rem;
+    margin-bottom: 0.5rem;
     font-weight: bold;
   }
   .project-detail {

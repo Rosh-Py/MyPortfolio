@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Socials } from "./";
-import { userGithub, userTwitter, userLinkedIn } from "../data";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (

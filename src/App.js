@@ -6,9 +6,9 @@ import "./index.css";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Sidebar />
       <Router>
+        <Header />
+        <Sidebar />
         <Switch>
           <Route exact path="/">
             <HomePage />
@@ -23,8 +23,8 @@ function App() {
             <Projects />
           </Route>
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

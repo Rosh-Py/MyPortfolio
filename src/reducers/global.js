@@ -7,10 +7,12 @@ const global_reducer = (state, action) => {
       return { ...state, isSidebarOpen: true };
 
     case "CHANGE_THEME":
-      if (!state.isThemeChanged) {
+      if (state.isThemeChanged) {
         document.documentElement.className = "blue-theme";
+        localStorage.setItem("ThemeChangedStatus", false);
       } else {
         document.documentElement.className = "orange-theme";
+        localStorage.setItem("ThemeChangedStatus", true);
       }
       return { ...state, isThemeChanged: !state.isThemeChanged };
 

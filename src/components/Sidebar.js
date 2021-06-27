@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaTimes, FaToggleOff, FaToggleOn } from "react-icons/fa";
 import styled from "styled-components";
 import { Socials } from "./";
@@ -15,16 +16,16 @@ const Sidebar = () => {
         <FaTimes className="sidebar-close-btn" onClick={closeSidebar} />
         <ul className="nav-links" onClick={closeSidebar}>
           <li>
-            <a href="/" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           {navLinks.map((link) => {
             return (
               <li key={uuidv4()}>
-                <a href={`/${link.toLowerCase()}`} className="nav-link">
+                <Link to={`/${link.toLowerCase()}`} className="nav-link">
                   {link}
-                </a>
+                </Link>
               </li>
             );
           })}
