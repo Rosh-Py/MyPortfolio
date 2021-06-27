@@ -34,7 +34,7 @@ const projects = [
       "A furniture e-commerce website designed using React.js (using reducer hook and context API to manage state effectively) and styled components with route protection using Auth0.",
     skills: "React.js, Styled Components",
     github: "https://github.com/Rosh-Py/react-comfy-sloth",
-    live: "https://rosh-react-comfy-sloth.netlify.app/products",
+    live: "https://rosh-react-comfy-sloth.netlify.app/",
   },
   {
     img: "https://ik.imagekit.io/jwn9hql2way/DevcamperAPI_2uHfgWDqd.png",
