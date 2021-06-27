@@ -30,10 +30,12 @@ function ProjectCard({ img, title, description, skills, github, live }) {
         ) : (
           <FaGithub className="disabled-icon" />
         )}
-        {live && (
+        {live ? (
           <a href={live}>
             <FaCodepen className="icon live-icon" />
           </a>
+        ) : (
+          <FaCodepen className="disabled-icon" />
         )}
       </div>
     </Wrapper>
