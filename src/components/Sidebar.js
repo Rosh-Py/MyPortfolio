@@ -94,7 +94,7 @@ const Wrapper = styled.div`
     color: var(--clr-primary-3);
   }
   .toggle-switch {
-    color: #00b4d8;
+    color: hsl(42, 78%, 60%);
     font-size: 2rem;
     cursor: pointer;
   }

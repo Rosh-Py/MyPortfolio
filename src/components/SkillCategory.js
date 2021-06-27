@@ -44,7 +44,12 @@ const Wrapper = styled.div`
     align-content: flex-start;
     flex-wrap: wrap;
     /* background: var(--clr-text-5); */
-    gap: 1rem;
+    /* gap: 1rem; */ //commented due to support issue
+  }
+
+  .btn {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
   }
 `;
 

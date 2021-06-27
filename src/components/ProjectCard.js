@@ -23,10 +23,12 @@ function ProjectCard({ img, title, description, skills, github, live }) {
         </div>
       </div>
       <div className="links">
-        {github && (
+        {github ? (
           <a href={github}>
             <FaGithub className="icon" />
           </a>
+        ) : (
+          <FaGithub className="disabled-icon" />
         )}
         {live && (
           <a href={live}>
@@ -92,6 +94,10 @@ const Wrapper = styled.article`
   .icon:hover{
     /* transform: scale(1.2); */
     color: var(--clr-primary-3);
+  }
+  .disabled-icon{
+    color: var(--clr-grey-8);
+    font-size: 1.5rem;
   }
 `;
 

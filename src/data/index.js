@@ -51,8 +51,8 @@ const projects = [
     description:
       "A Crio project! Front to back, designed to demonstrate the basic e-commerce with register and login functionalities, secured by backend using authorization and route protection.",
     skills: "Node.js,Express.js, MongoDB, Mongoose, React.js, Ant Design",
-    github: "temp",
-    live: "temp",
+    github: "",
+    live: "https://rosh-qkart-backend.netlify.app",
   },
   {
     img: "https://ik.imagekit.io/jwn9hql2way/XFlix_0u3MmjnVp.PNG",
@@ -60,7 +60,7 @@ const projects = [
     description:
       "A Crio buildout! A Video sharing platform, where youtube embed links can be uploaded for sharing. Videos can be watched, liked and disliked as well.",
     skills: "Node.js, Express.js, React.js, MongoDB, Mongoose",
-    github: "https://github.com/Rosh-Py/XFlix-Frontend",
+    github: "",
     live: "https://rosh-xflix-react-node.netlify.app/",
   },
   {
@@ -69,7 +69,7 @@ const projects = [
     description:
       "A Crio project! The role was to implement responsive frontend for Trip planning website, where user can explore the locations and make reservations.",
     skills: "HTML, CSS, Bootstrap, Javascript",
-    github: "https://github.com/Rosh-Py/Qkart-Dynamic/tree/master/frontend",
+    github: "",
     live: "https://rosh-qtrip-dynamic.netlify.app/",
   },
   {
