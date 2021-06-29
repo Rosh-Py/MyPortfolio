@@ -64,6 +64,24 @@ const projects = [
     live: "https://rosh-xflix-react-node.netlify.app/",
   },
   {
+    img: "https://ik.imagekit.io/jwn9hql2way/Myportfolio-1_lY2SN9MH8.png",
+    title: "Themed-Portfolio",
+    description:
+      "A themed portfolio to showcase your projects with more than one theme (with switch theme toggle). It's fast and cool coz it is made using React.js!",
+    skills: "React.js, Styled Components",
+    github: "https://github.com/Rosh-Py/MyPortfolio",
+    live: "http://roshanjha.netlify.app/",
+  },
+  {
+    img: "https://ik.imagekit.io/jwn9hql2way/crowdfund_WulWgfYa0a.png",
+    title: "CrowdFund",
+    description:
+      "A frontend design for crowd funding website where people can pledge amounts with or without rewards.",
+    skills: "React.js, Styled Components",
+    github: "https://github.com/Rosh-Py/crowdFund-MobileFirstDesign",
+    live: "https://rosh-crowdfund.netlify.app/",
+  },
+  {
     img: "https://ik.imagekit.io/jwn9hql2way/QTrip_Dynamic_8izopA2GP.PNG",
     title: "QTrip",
     description:
