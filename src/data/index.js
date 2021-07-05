@@ -5,7 +5,10 @@ const userGithub = "https://github.com/Rosh-Py";
 const userLinkedIn = "https://www.linkedin.com/in/roshanjha01";
 const userTwitter = "";
 const skills = [
-  { category: "Frontend", skills: "HTML5, CSS3, React.js" },
+  {
+    category: "Frontend",
+    skills: "HTML5, CSS3, Bootstrap, React.js, Styled Components",
+  },
   {
     category: "Backend",
     skills: "Node.js, MongoDB, Mongoose, Express, Oracle SQL",
@@ -15,9 +18,9 @@ const skills = [
 const heroImg =
   "https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
 const aboutText = `
-Hey There! Glad you are here.
+Hey There!👋 Glad you are here.😊
 I am Roshan, a full stack web developer from India.
-I've worked on technologies like PL/SQL (Yep! No secrets.😊), Oracle SQL and here comes my favorites😍 HTML5, CSS3, Javascript, React.js, Node.js, MongoDB with Mongoose and a little bit of Python too.
+I've worked on technologies like HTML5, CSS3, Javascript, React.js, Node.js, MongoDB with Mongoose, SQL, PL/SQL and Python.
 That's all my Lord!
 `;
 const aboutImg =
@@ -64,6 +67,24 @@ const projects = [
     live: "https://rosh-xflix-react-node.netlify.app/",
   },
   {
+    img: "https://ik.imagekit.io/jwn9hql2way/React_Rest_API_Countries_IpboSHNsL.png",
+    title: "Rest API Countries",
+    description:
+      "A Frontendmentor challenge! A website to know about different countries with dark mode option. Explore the countries and their border countries. Have a world Tour!",
+    skills: "React.js, Styled Components, REST API",
+    github: "https://github.com/Rosh-Py/react-rest-api-countries",
+    live: "https://rosh-rest-api-countries.netlify.app/",
+  },
+  {
+    img: "https://ik.imagekit.io/jwn9hql2way/React_Finding_Falcone_2HEyp9MVW.png",
+    title: "Finding Falcone",
+    description:
+      "A GeekTrust Coding Challenge! Find Queen Al Falcone by searching on potential planets and available SapceCrafts. Help King Shan!",
+    skills: "React.js, Styled Components, REST API",
+    github: "https://github.com/Rosh-Py/FindingFalcone_Geektrust",
+    live: "https://rosh-finding-falcone.netlify.app/",
+  },
+  {
     img: "https://ik.imagekit.io/jwn9hql2way/Myportfolio-1_lY2SN9MH8.png",
     title: "Themed-Portfolio",
     description:
@@ -76,7 +97,7 @@ const projects = [
     img: "https://ik.imagekit.io/jwn9hql2way/crowdfund_WulWgfYa0a.png",
     title: "CrowdFund",
     description:
-      "A frontend design for crowd funding website where people can pledge amounts with or without rewards.",
+      "A Frontendmentor challenge! A Crowd funding website where people can pledge amounts with or without rewards.",
     skills: "React.js, Styled Components",
     github: "https://github.com/Rosh-Py/crowdFund-MobileFirstDesign",
     live: "https://rosh-crowdfund.netlify.app/",

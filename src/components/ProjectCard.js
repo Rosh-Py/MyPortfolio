@@ -24,14 +24,24 @@ function ProjectCard({ img, title, description, skills, github, live }) {
       </div>
       <div className="links">
         {github ? (
-          <a href={github}>
+          <a
+            href={github}
+            target="_blank"
+            style={{ display: "table-cell" }}
+            rel="noopener noreferrer"
+          >
             <FaGithub className="icon" />
           </a>
         ) : (
           <FaGithub className="disabled-icon" />
         )}
         {live ? (
-          <a href={live}>
+          <a
+            href={live}
+            target="_blank"
+            style={{ display: "table-cell" }}
+            rel="noopener noreferrer"
+          >
             <FaCodepen className="icon live-icon" />
           </a>
         ) : (
